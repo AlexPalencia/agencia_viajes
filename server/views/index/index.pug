@@ -1,0 +1,28 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janiero
+        em aventura
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Donec a dolor at nisi finibus ultrices. Donec ac imperdiet mauris, gravida sollicitudin orci. Nulla sed eleifend ligula, in semper risus. Sed bibendum bibendum dui, vitae dignissim nisl suscipit eget.
+                p Donec a dolor at nisi finibus ultrices. Donec ac imperdiet mauris, gravida sollicitudin orci. Nulla sed eleifend ligula, in semper risus. Sed bibendum bibendum dui, vitae dignissim nisl suscipit eget.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", class="img-fluid")
+        h2.text-center.mb-5 Próximos Viajes
+        include ../layout/partials/viajes
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha 05 de octubre de 2020 - 05 de noviembre 2020
+                        p.precio $2,500 USD
+    .container
+        h2.text-center.my-5 Próximos Viajes
+        include ../layout/partials/testimoniales

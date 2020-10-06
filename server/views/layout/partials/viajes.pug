@@ -1,0 +1,16 @@
+.row.proximos-viajes
+    each viaje in viajes
+        .col-md-6.col-lg-4.mb-4
+            .card
+                img(src=`img/destinos_${viaje.imagen}.jpg`, class="img-fluid")
+                .card.body
+                    h2.mx-3 #{viaje.titulo}
+                    p.mx-3
+                        i.fas.fa-calendar-alt
+                        |   #{viaje.fecha_ida}-#{viaje.fecha_vuelta}
+                    p.mx-3
+                        i.fas.fa-dollar-sign
+                        |   #{viaje.precio}
+                    p.mx-3 #{viaje.descripcion.substr(0,100)}
+                    a(href=`viajes/${viaje.viajes_id}`, class="btn btn-success mx-3 mb-2") Más Información
+                    
